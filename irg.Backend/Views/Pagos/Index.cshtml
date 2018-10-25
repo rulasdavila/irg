@@ -1,0 +1,183 @@
+﻿@model IEnumerable<irg.Common.Models.Pagos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Clave_Instituto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Folio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Clave_Concepto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ME)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detalles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Costo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Recargos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pagado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total_Calculado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.No_Cuatrimestre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.F_Bancario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cancelado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.H_Clase)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detalle_Descuento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Bancos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Forma_Pago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Factura)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Clave_Instituto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Folio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Matricula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Clave_Concepto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ME)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detalles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Costo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Recargos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pagado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total_Calculado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Usuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.No_Cuatrimestre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.F_Bancario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cancelado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.H_Clase)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Detalle_Descuento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_Bancos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Forma_Pago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Factura)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

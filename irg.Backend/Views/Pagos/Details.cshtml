@@ -1,0 +1,226 @@
+﻿@model irg.Common.Models.Pagos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Pagos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave_Instituto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave_Instituto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Folio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Folio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave_Concepto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave_Concepto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detalles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Recargos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Recargos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pagado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pagado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Calculado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Calculado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ano)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ano)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.No_Cuatrimestre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.No_Cuatrimestre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F_Bancario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F_Bancario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cancelado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cancelado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.H_Clase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.H_Clase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Detalle_Descuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Detalle_Descuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Bancos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Bancos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Forma_Pago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Forma_Pago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
