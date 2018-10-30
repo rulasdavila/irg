@@ -291,7 +291,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\irg.Common\irg.Common.csproj">
-      <Project>{8c380cc3-9635-47c4-a5f3-44f350ccdfc4}</Project>
+      <Project>{96d19dd3-a2bd-408c-bfc6-fa2164b73b36}</Project>
       <Name>irg.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\irg.Domain\irg.Domain.csproj">

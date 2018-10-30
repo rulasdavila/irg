@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C380CC3-9635-47C4-A5F3-44F350CCDFC4}</ProjectGuid>
+    <ProjectGuid>{96D19DD3-A2BD-408C-BFC6-FA2164B73B36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>irg.Common</RootNamespace>
@@ -31,8 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -46,10 +49,66 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Alumno.cs" />
+    <Compile Include="Models\Asistencia.cs" />
+    <Compile Include="Models\Becas.cs" />
+    <Compile Include="Models\Cardex.cs" />
+    <Compile Include="Models\Carreras.cs" />
+    <Compile Include="Models\Carreras_Areas.cs" />
+    <Compile Include="Models\Colegiatura.cs" />
+    <Compile Include="Models\Concepto.cs" />
+    <Compile Include="Models\Coordinadores.cs" />
+    <Compile Include="Models\Coordinadores_Carreras.cs" />
+    <Compile Include="Models\Cp_Ciudades.cs" />
+    <Compile Include="Models\Cp_Cp.cs" />
+    <Compile Include="Models\Cp_Estados.cs" />
+    <Compile Include="Models\Cuatrimestres.cs" />
+    <Compile Include="Models\Cuatrimestre_Actual.cs" />
+    <Compile Include="Models\Datos_Institucion.cs" />
+    <Compile Include="Models\Descuentos.cs" />
+    <Compile Include="Models\Disponibles_Dias.cs" />
+    <Compile Include="Models\Disponibles_Hora.cs" />
+    <Compile Include="Models\Disponibles_Salones.cs" />
+    <Compile Include="Models\Evaluacion_aplicada.cs" />
+    <Compile Include="Models\Evaluacion_AplicadosRespuestas.cs" />
+    <Compile Include="Models\Evaluacion_CatalogoPruebasRealizadas.cs" />
+    <Compile Include="Models\Evaluacion_Categoria.cs" />
+    <Compile Include="Models\Evaluacion_Evaluadores.cs" />
+    <Compile Include="Models\Evaluacion_Evaluados.cs" />
+    <Compile Include="Models\Evaluacion_TiposEvaluacion.cs" />
+    <Compile Include="Models\Evaluacion___Docente_Materias_Evaluadas.cs" />
+    <Compile Include="Models\Evaluacion___Docente_Materias_Evaluar.cs" />
+    <Compile Include="Models\Genero.cs" />
+    <Compile Include="Models\Grupos.cs" />
+    <Compile Include="Models\Grupos_Jerarquias.cs" />
+    <Compile Include="Models\Historial_Alumnos.cs" />
+    <Compile Include="Models\Historial_Alumnos_Seguimiento.cs" />
+    <Compile Include="Models\Interconexion_Usuarios_Buzones.cs" />
+    <Compile Include="Models\Interconexion_Usuarios_Comentarios.cs" />
+    <Compile Include="Models\Interconexion_Usuarios_Dirigido.cs" />
+    <Compile Include="Models\Interconexion_Usuarios_Grupos.cs" />
+    <Compile Include="Models\Interconexion_Usuarios_Tablas.cs" />
+    <Compile Include="Models\Log_Movimientos.cs" />
+    <Compile Include="Models\Materias.cs" />
+    <Compile Include="Models\Meses.cs" />
     <Compile Include="Models\Pagos.cs" />
+    <Compile Include="Models\Pagos_Bancos.cs" />
+    <Compile Include="Models\Pagos_Compromisos_Alumnos.cs" />
+    <Compile Include="Models\Pagos_Formas_Pago.cs" />
+    <Compile Include="Models\Pagos_Saldos_Favor.cs" />
+    <Compile Include="Models\Periodos_Asignacion.cs" />
+    <Compile Include="Models\Permisos_Formularios.cs" />
+    <Compile Include="Models\Permisos_Usuarios.cs" />
+    <Compile Include="Models\Personal_Otros.cs" />
+    <Compile Include="Models\Planteles_Disponibles.cs" />
+    <Compile Include="Models\POI_Carreras.cs" />
+    <Compile Include="Models\POI_Examenes.cs" />
+    <Compile Include="Models\POI_Grupos.cs" />
+    <Compile Include="Models\POI_usuarios.cs" />
+    <Compile Include="Models\Profesores.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

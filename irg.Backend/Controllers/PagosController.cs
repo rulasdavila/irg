@@ -19,7 +19,7 @@ namespace irg.Backend.Controllers
         // GET: Pagos
         public async Task<ActionResult> Index()
         {
-            return View(await db.Pagos.ToListAsync());
+            return View(await db.Pagos.Take(200).OrderByDescending(x=>x.Folio).ToListAsync());
         }
 
         // GET: Pagos/Details/5
@@ -48,7 +48,7 @@ namespace irg.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "id,Clave_Instituto,Folio,Matricula,Clave_Concepto,CC,ME,CV,LI,NA,Detalles,Fecha,Costo,Recargos,Pagado,Total_Calculado,Usuario,Ano,No_Cuatrimestre,F_Bancario,Cancelado,H_Clase,Detalle_Descuento,Fecha_Bancos,Forma_Pago,Estatus,Factura")] Pagos pagos)
+        public async Task<ActionResult> Create([Bind(Include = "id,Clave_Instituto,Folio,Matricula,Clave_Concepto,CC,ME,CV,LI,NA,Detalles,Fecha,Costo,Recargos,Pagado,Total_Calculado,Usuario,Ano,No_Cuatrimestre,F_Bancario,Cancelado,H_Clase,Detalle_Descuento,Fecha_Banco,Forma_Pago,Estatus,Factura")] Pagos pagos)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +80,7 @@ namespace irg.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "id,Clave_Instituto,Folio,Matricula,Clave_Concepto,CC,ME,CV,LI,NA,Detalles,Fecha,Costo,Recargos,Pagado,Total_Calculado,Usuario,Ano,No_Cuatrimestre,F_Bancario,Cancelado,H_Clase,Detalle_Descuento,Fecha_Bancos,Forma_Pago,Estatus,Factura")] Pagos pagos)
+        public async Task<ActionResult> Edit([Bind(Include = "id,Clave_Instituto,Folio,Matricula,Clave_Concepto,CC,ME,CV,LI,NA,Detalles,Fecha,Costo,Recargos,Pagado,Total_Calculado,Usuario,Ano,No_Cuatrimestre,F_Bancario,Cancelado,H_Clase,Detalle_Descuento,Fecha_Banco,Forma_Pago,Estatus,Factura")] Pagos pagos)
         {
             if (ModelState.IsValid)
             {

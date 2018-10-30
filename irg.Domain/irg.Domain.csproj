@@ -55,14 +55,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\irg.Common\irg.Common.csproj">
-      <Project>{8c380cc3-9635-47c4-a5f3-44f350ccdfc4}</Project>
-      <Name>irg.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\irg.Common\irg.Common.csproj">
+      <Project>{96d19dd3-a2bd-408c-bfc6-fa2164b73b36}</Project>
+      <Name>irg.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

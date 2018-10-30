@@ -233,7 +233,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AsistenciaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PagosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -339,7 +341,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\irg.Common\irg.Common.csproj">
-      <Project>{8c380cc3-9635-47c4-a5f3-44f350ccdfc4}</Project>
+      <Project>{96d19dd3-a2bd-408c-bfc6-fa2164b73b36}</Project>
       <Name>irg.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\irg.Domain\irg.Domain.csproj">
