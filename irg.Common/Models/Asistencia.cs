@@ -20,6 +20,6 @@ namespace irg.Common.Models
         public DateTime Fecha_Reporta { get; set; }
         public string Usuario { get; set; }
         public string estatus { get; set; }
-        public int id { get; set; }
+        public int id { get; set; } //Autoincremental
     }
 }

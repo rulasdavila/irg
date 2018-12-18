@@ -19,7 +19,7 @@ namespace irg.Backend.Controllers
         // GET: Pagos
         public async Task<ActionResult> Index()
         {
-            return View(await db.Pagos.Take(200).OrderByDescending(x=>x.Folio).ToListAsync());
+            return View(await db.Pagos.Take(100).OrderByDescending(x=>x.Folio).ToListAsync());
         }
 
         // GET: Pagos/Details/5

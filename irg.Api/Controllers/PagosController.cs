@@ -21,7 +21,7 @@ namespace irg.Api.Controllers
         // GET: api/Pagos
         public IQueryable<Pagos> GetPagos()
         {
-            return db.Pagos;
+            return db.Pagos.Take(100).OrderByDescending(x=>x.Fecha);
         }
 
         // GET: api/Pagos/5

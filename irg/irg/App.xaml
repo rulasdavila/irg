@@ -1,8 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infra="clr-namespace:irg.Infraestructure"
              x:Class="irg.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            
+            <!--Locator-->
+            <infra:InstanceLocator x:Key="Locator"/>
+            <!--Parameters-->
+            <x:String x:Key="AppSoyRena">SoyRenaAdministrativos</x:String>
+            <x:String x:Key="UrlAPI">http://api.institutorenacimiento.edu.mx:89</x:String>
+            <x:String x:Key="UrlPrefix">/api</x:String>
+            <x:String x:Key="UrlServidor">www.institutorenacimiento.edu.mx</x:String>
+            <x:String x:Key="UrlInternet">google.com</x:String>
+            <!--Controllers-->
+            <x:String x:Key="UrlPagosController">/Pagos</x:String>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:irgAlumnos.Helpers"
+             x:Class="irgAlumnos.Views.LoginPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}"
+             Title="{i18n:Translate Login}"
+             BackgroundColor="#041232">
+    <ContentPage.Content>
+        <ScrollView 
+            BindingContext="{Binding Login}"
+            Padding="5">
+            <StackLayout>
+                <Image 
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    Source="logo.png"/>
+                    <!--Source="http://www.institutorenacimiento.edu.mx/images/logo%20irg%20horizontal.png"/>-->
+                <!--<Label
+                    IsVisible="{Binding IsVisible}"
+                    TextColor="White"
+                    Text="{i18n:Translate UserLabel}"/>-->
+                <Grid
+                    IsEnabled="{Binding IsUpdate}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Text="{i18n:Translate UserLabel}"
+                        TextColor="White"/>
+                    <Entry 
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Placeholder="{i18n:Translate UserPlaceHolder}"
+                        Text="{Binding User}"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"/>
+                    <Label 
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        Text="{i18n:Translate PasswordLabel}"
+                        TextColor="White"/>
+                    <Entry
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Placeholder="{i18n:Translate PasswordPlaceHolder}"
+                        Text="{Binding Pass}"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"/>
+                </Grid>
+                <ActivityIndicator
+                    VerticalOptions="CenterAndExpand"
+                    IsRunning="{Binding IsRunning}"/>
+                <Button
+                    Command="{Binding LoginCommand}"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    IsEnabled="{Binding IsEnabled}"
+                    Text="{i18n:Translate LoginButton}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

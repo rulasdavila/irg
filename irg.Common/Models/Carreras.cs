@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace irg.Common.Models
+﻿namespace irg.Common.Models
 {
+    using System;
+
     public class Carreras
     {
         public string Clave_Instituto { get; set; }
@@ -29,7 +25,7 @@ namespace irg.Common.Models
         public string C5 { get; set; }
         public string C6 { get; set; }
         public string C7 { get; set; }
-	    public string C8 { get; set; }
+        public string C8 { get; set; }
         public string C9 { get; set; }
         public string C10 { get; set; }
         public string C11 { get; set; }

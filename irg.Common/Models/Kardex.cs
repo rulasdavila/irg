@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace irg.Common.Models
 {
-    public class Cardex
+    public class Kardex
     {
         public string Clave_Instituto { get; set; }
         public int matricula { get; set; }
@@ -51,8 +51,8 @@ namespace irg.Common.Models
         public string VCF { get; set; }
         public string Registrado { get; set; }
         public string Academia_Nivel { get; set; }
-        public DateTime Fecha_Alta { get; set; }
-        public DateTime Fecha_UMov { get; set; }
+        public DateTime? Fecha_Alta { get; set; }
+        public DateTime? Fecha_UMov { get; set; }
         public string FinalLetra { get; set; }
     }
 }

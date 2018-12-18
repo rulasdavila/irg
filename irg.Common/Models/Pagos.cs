@@ -41,8 +41,12 @@ namespace irg.Common.Models
         public string Forma_Pago { get; set; }
         [Required]
         public string Estatus { get; set; }
-        
         public string Factura { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Matricula}{Detalles}";
+        }
     }
 
 }

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infra="clr-namespace:irgAlumnos.Infraestructure"
+             x:Class="irgAlumnos.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--   Locator    -->
+            <infra:InstanceLocator x:Key="Locator"/>
+            <!--   Parameters   -->
+            <x:String x:Key="AppSoyRena">SoyRenaAlumnos</x:String>
+            <x:String x:Key="VersionApp">0.0</x:String>
+            <x:String x:Key="VersionServidor"></x:String>
+            <x:String x:Key="UrlAPI">http://api.institutorenacimiento.edu.mx:52548</x:String>
+            <!--<x:String x:Key="UrlAPI">http://api.institutorenacimiento.edu.mx:89</x:String>-->
+            <!--<x:String x:Key="UrlAPI">http://172.16.1.9:52548</x:String>-->
+            <x:String x:Key="UrlPrefix">/api</x:String>
+            <x:String x:Key="UrlServidor">www.institutorenacimiento.edu.mx</x:String>
+            <x:String x:Key="UrlInternet">google.com</x:String>
+            <!--Controllers-->
+            <x:String x:Key="UrlPagosController">/Pagos</x:String>
+            <x:String x:Key="UrlVersionController">/AppSoyRena</x:String>
+            <x:String x:Key="UrlUsuariosController">/Usuarios</x:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
